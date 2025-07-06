@@ -38,20 +38,20 @@ export default function BookingPage({ params }: Props) {
       <p className="text-xl font-semibold text-blue-600 mb-8">Rp{trip.price} / person</p>
 
       <form className="bg-gray-100 p-6 rounded-lg shadow-md space-y-4">
-        <h2 className="text-2xl font-bold mb-4">Book Your Trip</h2>
-        <div className="flex flex-col">
+        <h2 className="text-gray-700 text-2xl font-bold mb-4">Book Your Trip</h2>
+        <div className="text-gray-700 flex flex-col">
           <label className="mb-1">Full Name</label>
           <input type="text" className="p-2 rounded border" required />
         </div>
-        <div className="flex flex-col">
+        <div className="text-gray-700 flex flex-col">
           <label className="mb-1">Email Address</label>
           <input type="email" className="p-2 rounded border" required />
         </div>
-        <div className="flex flex-col">
+        <div className="text-gray-700 flex flex-col">
           <label className="mb-1">Number of Travelers</label>
           <input type="number" className="p-2 rounded border" min="1" defaultValue="1" required />
         </div>
-        <div className="flex flex-col">
+        <div className="text-gray-700 flex flex-col">
           <label className="mb-1">Travel Date</label>
           <input type="date" className="p-2 rounded border" required />
         </div>

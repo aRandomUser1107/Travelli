@@ -9,10 +9,12 @@ const destinations = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-gray-800">
+    <main id="home"className="min-h-screen bg-white text-gray-800">
       <nav className="flex justify-between items-center p-6 shadow-md" aria-label="Main navigation">
         <h1 className="text-2xl font-bold text-blue-600">TRAVELLI</h1>
         <div className="space-x-6">
+          <a href="#home" className="hover:text-blue-600">Home</a>
+          <a href="" className="hover:text-blue-600">About</a>
           <a href="#destinations" className="hover:text-blue-600">Destinations</a>
           <a href="#testimonials" className="hover:text-blue-600">Testimonials</a>
           <a href="#contact" className="hover:text-blue-600">Contact</a>
