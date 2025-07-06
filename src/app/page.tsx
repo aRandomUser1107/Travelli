@@ -12,11 +12,12 @@ export default function Home() {
     <main id="home"className="min-h-screen bg-white text-gray-800">
       <nav className="flex justify-between items-center p-6 shadow-md" aria-label="Main navigation">
         <h1 className="text-2xl font-bold text-blue-600">TRAVELLI</h1>
-        <div className="space-x-6">
+        <div className="space-x-7">
           <a href="#home" className="hover:text-blue-600">Home</a>
           <a href="" className="hover:text-blue-600">About</a>
           <a href="#destinations" className="hover:text-blue-600">Destinations</a>
-          <a href="#testimonials" className="hover:text-blue-600">Testimonials</a>
+          <a href="" className="hover:text-blue-600">Itinerary</a>
+          <a href="" className="hover:text-blue-600">Community</a>
           <a href="#contact" className="hover:text-blue-600">Contact</a>
         </div>
       </nav>
@@ -29,9 +30,9 @@ export default function Home() {
         </button>
       </section>
 
-      <section id="destinations" className="py-16 px-8">
+      <section id="destinations" className="text-center py-16 px-8">
         <h3 className="text-3xl font-bold mb-8 text-center">Top Destinations</h3>
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid mb-8 md:grid-cols-3 gap-6">
           {destinations.map((place, index) => (
             <Link key={place.slug} href={`/booking/${place.slug}`}>
               <div className="shadow-lg rounded-lg overflow-hidden cursor-pointer hover:scale-105 transition">
@@ -49,6 +50,11 @@ export default function Home() {
               </div>
             </Link>
           ))}
+        </div>
+        <div className="">
+          <button className="text-white bg-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition focus:outline-none">
+            More Destinations
+          </button>
         </div>
       </section>
 
